@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/lunch_page"
+        android:layout_width="413dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="-2dp"
+        android:layout_marginBottom="0dp"
+        android:contentDescription="@string/imgV_Description"
+        android:scaleType="centerCrop"
+        android:src="@drawable/firstfield"
+        tools:ignore="ContentDescription,ImageContrastCheck,VisualLintBounds" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="5dp"
+        android:text="@string/score_0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/highScoreTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/score"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="1dp"
+        android:layout_marginTop="637dp"
+        android:text="@string/high_score_0"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="388dp"
+        android:layout_height="208dp"
+        android:layout_centerInParent="true"
+        android:contentDescription="@string/imgV_Description"
+        android:src="@drawable/logo"
+        tools:ignore="ImageContrastCheck" />
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="272dp"
+        android:backgroundTint="#00000000"
+        android:letterSpacing="0.2"
+        android:text="@string/tap_to_start"
+        android:textColor="#558B2F"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/continueBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="272dp"
+        android:backgroundTint="#00000000"
+        android:text="@string/continue_Game"
+        android:textColor="@color/black"
+        android:letterSpacing="0.2"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>
